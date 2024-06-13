@@ -1,21 +1,73 @@
-#card-body {
-    font-family: Arial, sans-serif;
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #4b2b20;
+    height: 60px;
+    color: #fff;
+    flex-wrap: wrap; 
+    overflow: hidden; 
+    box-sizing: border-box;
+}
+/* Logo Coffee Shop */
+.logo {
+    font-family: 'Dancing Script', cursive; 
+    color: #ffffff;
+    text-align: center; 
+    line-height: 0.4; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
 }
 
-.card-header, .card-footer {
-    background-color: #4b2b20;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+.logo {
+    font-family: 'Dancing Script', cursive; 
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.logo .coffee {
+    font-weight: normal; 
 }
 
-.card-header a, .card-footer {
-    color: white;
-    text-decoration: none;
+.logo .shop {
+    font-weight: bold; 
+}
+
+.nav-bar {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+}
+
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.nav-bar li {
     margin: 0 15px;
+}
+
+
+.nav-bar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+
+.nav-bar a.active {
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .card-header a:hover {
@@ -31,15 +83,10 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.card-cart-header {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
 .card-cart-table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .card-cart-table th, .card-cart-table td {
@@ -99,201 +146,210 @@
 .card-payment-methods img {
     width: 200px;
     margin: 5px;
+}
 
-/* phần Product*/
-body {
+/*css của giao diện point*/
+.points-section {
+    margin: 20px;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
 }
 
-header {
-    background-color: #3e2723;
+.points-display {
+    background-color: #4b2b20;
     color: white;
-    padding: 10px 0;
-    text-align: left;
-    font-size: 24px;
+    padding: 10px 50px 20px 50px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 250px; 
+    margin: 0 auto; 
 }
 
-nav {
-    display: flex;
-    justify-content: right;
-    background-color: #3e2723;
-    padding: 10px;
+.points-value {
+    font-size: 32px;
+    margin: 5px 0;
 }
 
-nav a {
+.pay-button {
+    background-color: #4b2b20;
     color: white;
-    margin: 0 15px;
-    text-decoration: none;
-}
-
-.container {
-    padding: 20px;
-}
-
-.product {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-}
-
-.product img {
-    max-width: 10%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.product-details {
-    margin-left: 20px;
-    max-width: 600px;
-}
-
-.product-details h2 {
-    margin-top: 0;
-}
-
-.price {
-    font-size: 18px;
-    color: #3e2723;
-}
-
-.add-btn {
-    background-color: #5d4037;
-    color: white;
-    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    padding: 8px 16px;
     cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px; 
 }
 
-.add-btn:hover {
-    background-color: #3e2723;
+.pay-button:hover {
+    background-color:#4b2b20;
 }
 
-footer {
-    background-color: #3e2723;
+.points-history {
+    margin-top: 20px;
+    max-width: 500px;
+    margin: 20px auto; 
+}
+
+.history-item {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+    padding: 5px; 
+    border-bottom: 1px solid #ddd;
+}
+
+.history-item p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 14px;}
+
+.history-date {
+    color: #555;
+    margin-top: 2px; 
+        font-size: 12px;}
+
+.history-points {
+    color: green;
+    font-weight: bold;
+    align-self: flex-end; 
+    font-size: 12px; 
+    margin-top: 2px;}
+
+.footer {
+    background-color:#4b2b20;
     color: white;
     text-align: center;
-    padding: 20px 0;
-    font-size: 14px;
+    padding: 20px 0;}
+
+.footer-content p {
+    margin: 5px 0;
 }
 
-/* MY Order*/
-body {
+/* css của giao diện profile*/
+.body-profile {
     font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-header {
-    background-color: #4b2b1c;
-    color: white;
-    padding: 10px 0;
-}
-
-.header-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh; 
+}
+
+.content-profile {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex: 1; 
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden; 
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column; 
     align-items: center;
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-}
-
-nav ul li a.active,
-nav ul li a:hover {
-    background-color: #333;
-    border-radius: 5px;
-}
-
-main {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
-}
-
-.orders-container {
+    max-width: 600px;
+    width: 100%;
     background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 
-.orders-container h2 {
-    margin: 0 0 20px;
-}
-
-.order-tabs {
+.profile-left {
     display: flex;
-    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-.tab {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px 5px 0 0;
-    margin-right: 5px;
+.profile-photo {
+    width: 80px; 
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-.tab.active {
-    background-color: #ddd;
-    border-bottom: 1px solid #fff;
-}
-
-.order-content {
-    display: none;
-    border: 1px solid #ccc;
-    border-radius: 0 5px 5px 5px;
-    padding: 20px;
-}
-
-.order-content.active {
-    display: block;
-}
-
-.order-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
-}
-
-.order-item:last-child {
-    border-bottom: none;
-}
-
-footer {
-    background-color: #4b2b1c;
-    color: white;
+.profile-name {
     text-align: center;
-    padding: 20px 0;
-    margin-top: 20px;
+    font-size: 16px; 
+    margin: 5px 0; 
 }
 
-.footer-container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
+.change-photo-button {
+    padding: 5px;
+    background-color: #4b2b20;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.change-photo-button:hover {
+    background-color:#4b2b20;
+}
+
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.profile-form label {
+    margin-top: 3px; 
+    margin-bottom: 3px;
+    font-size: 12px; 
+    width: 100%;
+    text-align: left; 
+}
+
+.profile-form input, .profile-form textarea {
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 12px; 
+}
+
+.profile-form textarea {
+    resize: vertical;
+    height: 30px; 
+}
+
+.qr-code {
+    width: 80px; 
+    height: 80px;
+    margin: 5px 0; 
+}
+
+.save-button {
+    padding: 5px; 
+    background-color:#4b2b20;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px; 
+}
+
+.save-button:hover {
+    background-color: #4b2b20;
+}
+
+.footer {
+    background-color: #4b2b20;
+    color: #fff;
+    padding: 5px 15px;
+    text-align: center;
+    box-sizing: border-box;
+    flex-shrink: 0; 
 }
