@@ -1,0 +1,204 @@
+/* Reset các thuộc tính mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #351C0F; 
+    padding: 10px 20px; 
+    height: 100.9px;
+}
+
+.coffee-shop {
+    margin-right: auto;
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+.home-products-cart-my-orders-profile-points-login-sign-up {
+    display: flex;
+    gap: 20px;
+}
+
+.link1 {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 18px;
+}
+
+.link1:hover {
+    color: grey; /* Màu chữ của liên kết khi hover */
+}
+
+
+
+
+header {
+    background-color: #3e2723;
+    color: white;
+    padding: 10px 0;
+    text-align: left;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+    background-color: #3e2723;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.container {
+    padding: 20px;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.product img {
+    max-width: 10%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-details {
+    margin-left: 20px;
+    max-width: 600px;
+}
+
+.product-details h2 {
+    margin-top: 0;
+}
+
+.price {
+    font-size: 18px;
+    color: #3e2723;
+}
+
+.add-btn {
+    background-color: #5d4037;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background-color: #3e2723;
+}
+/* Styles for modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+}
+.modal-image {
+    display: block;
+    max-width: 20%;
+    height: 20px;
+    width: 100px;
+   
+}
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Footer */
+.footer {
+    width: 100%;
+    padding: 0 39px 47.3px 39px;
+    box-sizing: border-box;
+    background-color: #351C0F;
+  }
+  
+  .container-5 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  
+  .container-1 {
+    margin: 0 22px 29.6px 22px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+  }
+  
+  .coffee-shop-1 {
+    position: relative;
+    margin-right: 24.7px;
+    overflow-wrap: break-word;
+    font-family: 'La Belle Aurore';
+    font-weight: 400;
+    font-size: 48px;
+    color: #FFFFFF;
+  }
+  
+  .one-stop-one-heart-one-cup {
+    margin: 35.5px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'ABeeZee';
+    font-weight: 400;
+    font-size: 15px;
+    color: #FFFFFF;
+  }
+  
+  .cng-ty-cphn-thng-mi-dch-vcoffee-shop-msdn-1234567-do-skhoch-vu-ttp-hn-cp-ngy-18052024-ngii-din-nguyn-vn-ba-ch-hniin-thoi-02871078079-email-coffeeshopgmail-com {
+    overflow-wrap: break-word;
+    font-family: 'ABeeZee';
+    font-weight: 400;
+    font-size: 25px;
+    color: #FFFFFF;
+  }
+  
+  .all-rights-reserved {
+    font-family: 'ABeeZee';
+    font-weight: 400;
+    font-size: 15px;
+    color: #FFFFFF;
+  }
+
+

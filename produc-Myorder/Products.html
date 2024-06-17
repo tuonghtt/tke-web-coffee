@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop </title>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Products.css">
+</head>
+<body>
+        <div class="header">
+            <div class="rectangle-1"></div>
+            <span class="coffee-shop">
+              Coffee Shop
+            </span>
+            <p class="home-products-cart-my-orders-profile-points-login-sign-up">
+              <a href="../homepage-loginsignup/pages/home_page.html" class="link1">Home</a>
+              <a href="/ProductsMyOrder/Products.html" class="link1">Products</a>
+              <a href="/ProductsMyOrder/myOrder.html" class="link1">My Order</a>
+              <a href="/card-point-profile/card.html" class="link1">Cart</a>
+              <a href="/card-point-profile/profle.html" class="link1">My Profile</a>
+              <a href="/card-point-profile/point.html" class="link1">Point</a>
+              <a href="../homepage-loginsignup/pages/sign_up.html" class="link1">Login/Sign up</a>
+            </p>
+          </div>
+
+<div class="container">    
+          <div class="product">
+              <img src="image/Americano.png" alt="Americano">
+              <div class="product-details">
+                  <h2>Americano</h2>
+                  <p>The aroma of our Americano brewed with premium roasted coffee grounds and hot water. It has a velvety body, caramel-like aroma with an earthy flavour and bittersweet finish.</p>
+                  <p class="price">2.00$</p>
+                  <button class="add-btn" onclick="openModal('Americano', 2.00)">Add</button>
+              </div>
+          </div>
+    
+  
+    <div class="product">
+        <img src="image/cappuccino.png" alt="Cappuccino">
+        <div class="product-details">
+            <h2>Cappuccino</h2>
+            <p>With the richness and intensity of espresso, complemented by the creamy and velvety texture of steamed milk, offering a combination of strong coffee notes, subtle sweetness, and a touch of bitterness.</p>
+            <p class="price">4.00$</p>
+            <button class="add-btn" onclick="openModal('Americano', 2.00)">Add</button>
+        </div>
+    </div>
+    
+    <div class="product">
+        <img src="image/Yule Log Cake.png" alt="Yule Log Cake">
+        <div class="product-details">
+            <h2>Yule Log Cake</h2>
+            <p>Taste a combination of sweet and rich flavours of our thin sheet of sponge cake filled with a creamy filling, chocolate ganache, buttercream and a cherry on top as a garnish.</p>
+            <p class="price">6.00$</p>
+            <button class="add-btn" onclick="openModal('Americano', 2.00)">Add</button>
+        </div>
+    </div>
+</div>
+
+
+<div id="productModal" class="modal">
+  <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle">Americano</h2>
+      <img id="modalImage" src="" alt="Americano">
+      <div>
+          <label for="quantity">Quantity</label>
+          <input type="number" id="quantity" name="quantity" value="1" min="1">
+      </div>
+      <div>
+          <label for="temperature">Cold/Hot</label>
+          <select id="temperature">
+              <option value="cold">Cold</option>
+              <option value="hot">Hot</option>
+          </select>
+      </div>
+      <div>
+          <label for="size">mL</label>
+          <select id="size">
+              <option value="250">250 mL</option>
+              <option value="350">350 mL</option>
+              <option value="450">450 mL</option>
+          </select>
+      </div>
+      <div>
+          <label for="type">Type of coffee</label>
+          <select id="type">
+              <option value="arabica">Arabica</option>
+              <option value="robusta">Robusta</option>
+              <option value="blend">Blend</option>
+          </select>
+      </div>
+      
+      <div>
+          <label for="milk">Milk</label>
+          <select id="milk">
+              <option value="none">None</option>
+              <option value="regular">Regular</option>
+              <option value="soy">Soy</option>
+              <option value="almond">Almond</option>
+          </select>
+      </div>
+      <p>Total: <span id="totalPrice">2.00$</span></p>
+      <button onclick="addToCart()">Add to cart</button>
+  </div>
+
+<div class="footer">
+  <div class="rectangle-7"></div>
+       <div class="container-5">
+         <div class="container-1">
+        <span class="coffee-shop-1">
+          Coffee Shop
+        </span>
+        <div class="one-stop-one-heart-one-cup">
+          one Stop | one Heart | one Cup
+        </div>
+      </div>
+      <span class="cng-ty-cphn-thng-mi-dch-vcoffee-shop-msdn-1234567-do-skhoch-vu-ttp-hn-cp-ngy-18052024-ngii-din-nguyn-vn-ba-ch-hniin-thoi-02871078079-email-coffeeshopgmail-com">
+        Công ty cổ phần thương mại dịch vụ Coffee Shop<br />
+        Mã số DN: 1234567 do sở kế hoạch và đầu tư tp. HN cấp ngày 18/05/2024. Người đại diện: Nguyễn Văn B<br />
+        Địa chỉ: Hà Nội   Điện thoại: (028) 7107 8079   Email: coffeeshop@gmail.com
+      </span><br />
+      <span class="all-rights-reserved">
+        @ 2023 All Rights Reserved
+      </span>
+    
+</div>
+<script>
+  function openModal(productName, price) {
+    document.getElementById('productModal').style.display = 'block';
+    document.getElementById('modalTitle').textContent = productName;
+    document.getElementById('totalPrice').textContent = price + '$';
+    // Cập nhật hình ảnh src dựa trên productName
+    document.getElementById('modalImage').src = 'image/' + productName + '.png';
+}
+
+function closeModal() {
+    document.getElementById('productModal').style.display = 'none';
+}
+
+function addToCart() {
+    // Thêm chức năng để thêm sản phẩm vào giỏ hàng
+    closeModal();
+}
+
+// Đóng phương thức khi người dùng nhấp vào bất kỳ đâu bên ngoài phương thức
+window.onclick = function(event) {
+    if (event.target == document.getElementById('productModal')) {
+        closeModal();
+    }
+}
+</script>
+</body>
+</html>

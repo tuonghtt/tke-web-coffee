@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Cart</title>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="myOrder.css">
+</head>
+<body>
+    <div class="header">
+        <span class="coffee-shop">Coffee Shop</span>
+        <p class="home-products-cart-my-orders-profile-points-login-sign-up">
+            <a href="../homepage-loginsignup/pages/home_page.html" class="link1">Home</a>
+              <a href="/ProductsMyOrder/Products.html" class="link1">Products</a>
+              <a href="/ProductsMyOrder/myOrder.html" class="link1">My Order</a>
+              <a href="/card-point-profile/card.html" class="link1">Cart</a>
+              <a href="/card-point-profile/profle.html" class="link1">My Profile</a>
+              <a href="/card-point-profile/point.html" class="link1">Point</a>
+              <a href="../homepage-loginsignup/pages/sign_up.html" class="link1">Login/Sign up</a>
+        </p>
+    </div>
+
+    <main>
+        <div class="orders-container">
+            <h2>My order</h2>
+            <div class="order-tabs">
+                <button class="tab active" onclick="showTab('current')">Current</button>
+                <button class="tab" onclick="showTab('history')">History</button>
+            </div>
+            <div id="current" class="order-content active">
+                <div class="order-item">
+                    <span class="order-date">24 Mar | 12:30</span>
+                    <span class="order-name">Americano</span>
+                    <span class="order-price">2.00$</span>
+                </div>
+                <div class="order-item">
+                    <span class="order-date">20 Mar | 12:30</span>
+                    <span class="order-name">Latte</span>
+                    <span class="order-price">4.00$</span>
+                </div>
+                <div class="order-item">
+                    <span class="order-date">16 Mar | 12:30</span>
+                    <span class="order-name">Coffee</span>
+                    <span class="order-price">2.00$</span>
+                </div>
+            </div>
+            <div id="history" class="order-content">
+                <div class="order-item">
+                    <span class="order-date">24 Feb | 12:30</span>
+                    <span class="order-name">Cappuccino</span>
+                    <span class="order-price">4.00$</span>
+                </div>
+                <div class="order-item">
+                    <span class="order-date">20 Feb | 12:30</span>
+                    <span class="order-name">Latte</span>
+                    <span class="order-price">6.00$</span>
+                </div>
+                <div class="order-item">
+                    <span class="order-date">16 Feb | 12:30</span>
+                    <span class="order-name">Coffee</span>
+                    <span class="order-price">4.00$</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="footer">
+        <div class="rectangle-7"></div>
+        <div class="container-5">
+            <div class="container-1">
+                <span class="coffee-shop-1">Coffee Shop</span>
+                <div class="one-stop-one-heart-one-cup">one Stop | one Heart | one Cup</div>
+            </div>
+            <span class="company-info">
+                Công ty cổ phần thương mại dịch vụ Coffee Shop<br />
+                Mã số DN: 1234567 do sở kế hoạch và đầu tư tp. HN cấp ngày 18/05/2024. Người đại diện: Nguyễn Văn B<br />
+                Địa chỉ: Hà Nội   Điện thoại: (028) 7107 8079   Email: coffeeshop@gmail.com
+            </span><br />
+            <span class="all-rights-reserved">@ 2023 All Rights Reserved</span>
+        </div>
+    </div>
+
+    <script>
+        function showTab(tab) {
+            var tabs = document.querySelectorAll('.tab');
+            var contents = document.querySelectorAll('.order-content');
+
+            tabs.forEach(function(tabElement) {
+                tabElement.classList.remove('active');
+            });
+            contents.forEach(function(contentElement) {
+                contentElement.classList.remove('active');
+            });
+
+            document.querySelector('.tab[onclick="showTab(\'' + tab + '\')"]').classList.add('active');
+            document.getElementById(tab).classList.add('active');
+        }
+    </script>
+</body>
+</html>
