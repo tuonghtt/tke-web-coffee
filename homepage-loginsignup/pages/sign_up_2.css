@@ -1,0 +1,162 @@
+
+.sign-up-1 {
+  background: #FFFFFF;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #351C0F; 
+  padding: 10px 20px; 
+  height: 100.9px;
+}
+
+.coffee-shop {
+  position: relative;
+  margin-right: 160px;
+  width: 100%;
+  overflow-wrap: break-word;
+  font-family: 'La Belle Aurore';
+  font-weight: 400;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+
+.home-products-cart-my-orders-profile-points-login-sign-up {
+  display: flex;
+  gap: 20px;
+}
+
+.link1 {
+  text-decoration: none; /* Remove underline from links */
+  color: #FFFFFF;
+  font-family: 'ABeeZee', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+.link1:hover {
+  color: grey; /* Màu chữ của liên kết khi hover */
+}
+
+/*  */
+.content{
+  display: flex;
+  justify-content: center;
+}
+.forgot-password-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.forgot-pasword {
+  font-size: 34px;
+  text-align: center;
+  font-weight: bold;
+  color: #351C0F;
+  margin-bottom: 50px;
+}
+.enter-email-address{
+  text-align: center;
+margin-left: 80px;
+      font-size: 20px;
+}
+
+.frame-1, .frame-2, .frame-3, .frame-4 {
+  width: 300px;
+  
+  margin-bottom: 15px;
+}
+
+ .examplegmail-com  {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  color: grey;
+}
+.back-to-sign-in, .send{
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 4px;
+  color: #FFFFFF;
+}
+ .examplegmail-com {
+  height: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.back-to-sign-in {
+  color: #ccc;
+  cursor: pointer;
+}
+
+
+
+.send {
+  background-color: #351C0F;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.send:hover {
+  background-color: #2c160d;
+}
+/* Media Queries for Responsiveness */
+/* Tablets */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  
+  .coffee-shop {
+    margin-right: 0;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .home-products-cart-my-orders-profile-points-login-sign-up {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .link1 {
+    font-size: 14px;
+  }
+  /* Mobile Phones */
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  
+  .coffee-shop {
+    margin-right: 0;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .home-products-cart-my-orders-profile-points-login-sign-up {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .link1 {
+    font-size: 14px;
+  }
+}
+}

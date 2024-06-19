@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Sử dụng flex-start để nội dung không bị đẩy xuống */
+    align-items: center;
+    min-height: 100vh; /* Đảm bảo chiều cao tối thiểu là 100vh để không bị khuất */
+    overflow: auto; /* Cho phép cuộn trang nếu cần */
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ngăn nội dung tràn ra ngoài */
+    margin-top: 20px; /* Để nội dung không dính sát vào cạnh trên */
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.item img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.details {
+    flex: 1;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.details h2 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.details p {
+    margin: 5px 0 0;
+    color: #999;
+}
+
+.points {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5b3b2e;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.points {
+    background-color: #3e291f;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.close {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.confirm-button, .cancel-button {
+    background-color: #5b3b2e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 1em;
+}
+
+.confirm-button, .cancel-button {
+    background-color: #3e291f;
+}
+
+.my-point {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #351C0F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.my-point {
+    background-color: #351C0F;
+}
+
+@media (min-width: 600px) {
+    .item {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .details {
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 599px) {
+    .item {
+        flex-direction: column;
+        align-items: center;
+    }
+    .details {
+        text-align: center;
+        margin-left: 0;
+    }
+}

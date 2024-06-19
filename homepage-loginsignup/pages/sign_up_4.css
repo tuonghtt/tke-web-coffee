@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sign-up-1 {
+  background: #FFFFFF;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #351C0F; 
+  padding: 10px 20px; 
+  height: 100.9px;
+}
+
+.coffee-shop {
+  position: relative;
+  margin-right: 160px;
+  width: 100%;
+  overflow-wrap: break-word;
+  font-family: 'La Belle Aurore';
+  font-weight: 400;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+
+.home-products-cart-my-orders-profile-points-login-sign-up {
+  display: flex;
+  gap: 20px;
+}
+
+.link1 {
+  text-decoration: none; /* Remove underline from links */
+  color: #FFFFFF;
+  font-family: 'ABeeZee', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+.link1:hover {
+  color: grey; /* Màu chữ của liên kết khi hover */
+}
+/*  */
+.main{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.new-pasword {
+  font-size: 34px;
+  font-weight: bold;
+  color: #351C0F;
+  margin-bottom: 20px;
+}
+.frame-15, .frame-16 {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.frame-1, .frame-11 {
+  margin-bottom: 10px;
+}
+.enter-new-password, .confirm-password {
+  font-size: 18px;
+  color: #351C0F;
+}
+.frame-7, .frame-71 {
+  width: 100%;
+}
+.at-least-8-digits, .container {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.send {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  background-color: #351C0F;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.send:hover {
+  background-color: #2c160d;
+}
+/* Media Queries for Responsiveness */
+/* Tablets */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  
+  .coffee-shop {
+    margin-right: 0;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .home-products-cart-my-orders-profile-points-login-sign-up {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .link1 {
+    font-size: 16px;
+  }
+  /* Mobile Phones */
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  
+  .coffee-shop {
+    margin-right: 0;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .home-products-cart-my-orders-profile-points-login-sign-up {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .link1 {
+    font-size: 14px;
+  }
+}
+}

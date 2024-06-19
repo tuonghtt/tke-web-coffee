@@ -1,0 +1,330 @@
+/* Đặt lại margin và padding để tránh các vấn đề mặc định của trình duyệt */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.home-page {
+  background: #FFFFFF;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #351C0F; 
+  padding: 10px 20px; 
+  height: 100.9px;
+}
+
+.coffee-shop {
+  position: relative;
+  margin-right: 160px;
+  width: 100%;
+  overflow-wrap: break-word;
+  font-family: 'La Belle Aurore';
+  font-weight: 400;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+
+.home-products-cart-my-orders-profile-points-login-sign-up {
+  display: flex;
+  gap: 20px;
+}
+
+.link1 {
+  text-decoration: none; /* Bỏ gạch chân của liên kết */
+  color: #FFFFFF;
+  font-family: 'ABeeZee', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+.link1:hover {
+  color: grey; /* Màu chữ của liên kết khi hover */
+}
+
+.home-page .content {
+  width: 100%;
+  background: url('../assets/images/pexels_jonathan_borba_28787132.jpeg');
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 105.4px 84px 189.5px 0;
+  box-sizing: border-box;
+}
+.home-page .container-3 {
+  border-radius: 0 56px 56px 0;
+  background: rgba(53, 28, 15, 0.72);
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Sắp xếp các phần tử theo cột */
+  padding: 8.1px 195.1px 71.3px 20px;
+  width: 800px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.home-page .title {
+  position: relative;
+  margin-right: 237px;
+  display: flex;
+  padding-bottom: 6.2px;
+  height: fit-content;
+  flex-grow: 1;
+  flex-basis: 800px;
+  box-sizing: border-box;
+}
+.home-page .shop-all-products {
+  overflow-wrap: break-word;
+  font-family: 'ABeeZee';
+  font-weight: 400;
+  font-size: 24px;
+  color: #351C0F;
+}
+.home-page .button-shop-all-products {
+  border-radius: 72px;
+  border: 5px solid #351C0F;
+  background: #FFFFFF;
+  position: relative;
+  margin: 299px 0 12.6px 0;
+  display: flex;
+  padding: 14px 0;
+  height: fit-content;
+  flex-grow: 1;
+  flex-basis: 319px;
+  box-sizing: border-box;
+}
+
+.home-page .discover-new-flavours {
+  overflow-wrap: break-word;
+  font-family: 'Futura', 'Roboto Condensed';
+  margin-left: 20px;
+  font-weight: 700;
+  font-size: 80px;
+  color: #FFFFFF;
+}
+.home-page .coffee-always-sounds-like-abrilliant-idea {
+  overflow-wrap: break-word;
+  font-family: 'ABeeZee';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1;
+  color: #FFFFFF;
+  margin-top: 20px; /* Tạo khoảng cách giữa hai phần */
+}
+
+.home-page .footer {
+  width: 100%;
+  padding: 0 39px 47.3px 39px;
+  box-sizing: border-box;
+  background-color: #351C0F;
+}
+.home-page .container-5 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.home-page .container-1 {
+  margin: 0 22px 29.6px 22px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.home-page .coffee-shop-1 {
+  position: relative;
+  margin-right: 24.7px;
+  overflow-wrap: break-word;
+  font-family: 'La Belle Aurore';
+  font-weight: 400;
+  font-size: 48px;
+  color: #FFFFFF;
+}
+.home-page .one-stop-one-heart-one-cup {
+  margin: 35.5px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'ABeeZee';
+  font-weight: 400;
+  font-size: 15px;
+  color: #FFFFFF;
+}
+.home-page .container-2 {
+  margin-bottom: 7.1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-end;
+  box-sizing: border-box;
+}
+.home-page .all-rights-reserved {
+  font-family: 'ABeeZee';
+  font-weight: 400;
+  font-size: 15px;
+  color: #FFFFFF;
+}
+.home-page .cng-ty-cphn-thng-mi-dch-vcoffee-shop-msdn-1234567-do-skhoch-vu-ttp-hn-cp-ngy-18052024-ngii-din-nguyn-vn-ba-ch-hniin-thoi-02871078079-email-coffeeshopgmail-com {
+  overflow-wrap: break-word;
+  font-family: 'ABeeZee';
+  font-weight: 400;
+  font-size: 25px;
+  color: #FFFFFF;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Media Queries for Responsiveness */
+/* Tablets */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  
+  .coffee-shop {
+    margin-right: 0;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .home-products-cart-my-orders-profile-points-login-sign-up {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .link1 {
+    font-size: 16px;
+  }
+  
+  .home-page .content {
+    flex-direction: column;
+    padding: 50px 20px;
+    align-items: center;
+  }
+  
+  .home-page .discover-new-flavours {
+    font-size: 60px;
+    margin-left: 0;
+    text-align: center;
+  }
+  
+  .home-page .coffee-always-sounds-like-abrilliant-idea {
+    font-size: 24px;
+    margin-left: 0;
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  .home-page .button-shop-all-products {
+    flex-basis: 50%; /* Adjust the width to 50% of the container */
+    max-width: 400px; /* Optional: Set a maximum width to avoid it growing too wide */
+    margin: 100px auto 20px;
+  }
+  
+  
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  
+  .coffee-shop {
+    margin-right: 0;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .home-products-cart-my-orders-profile-points-login-sign-up {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .link1 {
+    font-size: 14px;
+  }
+  
+  .home-page .content {
+    flex-direction: column;
+    padding: 210px;
+    align-items: center; /* Căn giữa nội dung */
+  }
+  
+  .home-page .container-3 {
+    padding: 20px;
+    width: auto; /* Đảm bảo chiều rộng tự động điều chỉnh */
+  }
+  
+
+    .home-page .discover-new-flavours {
+      font-size: 40px;
+      margin-left: 0;
+      text-align: center;
+      word-wrap: break-word; /* Đảm bảo văn bản tự động xếp hàng khi cần thiết */
+      white-space: normal; /* Đảm bảo không cắt văn bản khi bị tràn */
+    }
+  
+  
+  
+  .home-page .coffee-always-sounds-like-abrilliant-idea {
+    font-size: 18px;
+    margin-left: 0;
+    text-align: center;
+    position: static; /* Đặt lại vị trí để nó nằm dưới phần trước đó */
+    margin-top: 20px;
+  }
+  .home-page .button-shop-all-products {
+    flex-basis: 70%; /* Adjust width to 70% of the container */
+    max-width: 300px; /* Optional: Set a maximum width */
+    margin: 50px auto 10px;
+  }
+  
+}
+@media (max-width: 390px) {
+  .home-page .container-3 {
+    width: 100%; /* Sử dụng chiều rộng tối đa của container */
+    max-width: 100%; /* Sử dụng chiều rộng tối đa của container */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .home-page .discover-new-flavours {
+    font-size: 36px; /* Giảm kích thước font cho màn hình nhỏ hơn */
+    margin-left: 0;
+    text-align: center;
+    word-wrap: break-word; /* Đảm bảo văn bản tự động xếp hàng khi cần thiết */
+    white-space: normal; /* Đảm bảo không cắt văn bản khi bị tràn */
+  }
+
+  .home-page .coffee-always-sounds-like-abrilliant-idea {
+    font-size: 16px; /* Giảm kích thước font cho màn hình nhỏ hơn */
+    margin-left: 0;
+    text-align: center;
+    position: static; /* Đặt lại vị trí để nó nằm dưới phần trước đó */
+    margin-top: 20px;
+  }
+
+  .home-page .button-shop-all-products {
+    flex-basis: 80%; /* Điều chỉnh width thành 80% của container */
+    max-width: 300px; /* Tối đa chiều rộng là 300px */
+    margin: 40px auto 10px; /* Điều chỉnh khoảng cách giữa các phần tử */
+    font-size: 14px; /* Giảm kích thước font cho màn hình nhỏ hơn */
+    padding: 12px 0; /* Điều chỉnh padding */
+    box-sizing: border-box;
+  }
+}
+

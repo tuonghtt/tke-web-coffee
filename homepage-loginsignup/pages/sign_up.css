@@ -1,0 +1,328 @@
+/* Đặt lại margin và padding để tránh các vấn đề mặc định của trình duyệt */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.home-page {
+  background: #FFFFFF;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #351C0F; 
+  padding: 10px 20px; 
+  height: 100.9px;
+}
+
+.coffee-shop {
+  position: relative;
+  margin-right: 160px;
+  width: 100%;
+  overflow-wrap: break-word;
+  font-family: 'La Belle Aurore';
+  font-weight: 400;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+
+.home-products-cart-my-orders-profile-points-login-sign-up {
+  display: flex;
+  gap: 20px;
+}
+
+.link1 {
+  text-decoration: none; /* Bỏ gạch chân của liên kết */
+  color: #FFFFFF;
+  font-family: 'ABeeZee', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+.link1:hover {
+  color: grey; /* Màu chữ của liên kết khi hover */
+}
+
+
+.main {
+  display: flex;
+  height: calc(100vh - 100.9px); /* Full height minus header height */
+  justify-content: center;
+  align-items: stretch; /* Ensure children stretch to fill height */
+  margin: 0; /* Remove any default margin */
+}
+
+.main .content {
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  padding: 0; /* Remove padding */
+}
+
+.content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+.frame-57 {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 50%;
+  height: 100%; /* Ensure it fills the height */
+  box-sizing: border-box; /* Include padding in width/height calculations */
+}
+
+.welcome-back {
+  font-size: 28px;
+  font-weight: bold;
+  color: #351C0F;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.frame-55, .frame-551 {
+  margin-bottom: 15px;
+}
+
+.frame-52, .frame-521 {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.name, .name-2 {
+  font-size: 14px;
+  color: #351C0F;
+}
+
+.frame-53, .frame-531 {
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.name-1, .name-3 {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 10px;
+  color: grey;
+}
+
+.frame-56 {
+  background: #351C0F;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.frame-63 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.frame-60, .frame-62 {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icons-8-google-1, .vector-4 {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.sign-in-with-google, .sign-in-with-apple {
+  font-size: 14px;
+  color: #888888;
+}
+
+.group-4 {
+  text-align: center;
+}
+
+
+.dont-have-an-account-sign-up {
+  font-size: 14px;
+  color: #888888;
+}
+
+.dont-have-an-account-sign-up-sub-61 {
+  color: #007BFF;
+  cursor: pointer;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Media Queries for Responsiveness */
+/* Tablets */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  
+  .coffee-shop {
+    margin-right: 0;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .home-products-cart-my-orders-profile-points-login-sign-up {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .link1 {
+    font-size: 16px;
+  }
+  
+  .main {
+    flex-direction: column;
+    padding: 50px 20px;
+    align-items: center;
+  }
+  
+  .frame-57 {
+    width: 80%;
+  }
+  
+  .welcome-back {
+    font-size: 20px;
+  }
+  
+  .enter-your-credentials-to-access-your-account {
+    font-size: 14px;
+  }
+  
+  .frame-55, .frame-551, .frame-52, .frame-521 {
+    margin-bottom: 10px;
+  }
+  
+  .name, .name-2 {
+    font-size: 12px;
+  }
+  
+  .name-1, .name-3 {
+    font-size: 12px;
+  }
+  
+  .forgot-password, .remember-for-30-days {
+    font-size: 12px;
+  }
+  
+  .frame-56 {
+    padding: 8px 0;
+  }
+  
+  .frame-63 {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .sign-in-with-google, .sign-in-with-apple {
+    font-size: 12px;
+  }
+  
+  .group-4 .dont-have-an-account-sign-up {
+    font-size: 12px;
+  }
+  
+  .group-4 .dont-have-an-account-sign-up-sub-61 {
+    font-size: 12px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  
+  .coffee-shop {
+    margin-right: 0;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .home-products-cart-my-orders-profile-points-login-sign-up {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .link1 {
+    font-size: 14px;
+  }
+  
+  .main {
+    flex-direction: column;
+    padding: 20px;
+    align-items: center; /* Căn giữa nội dung */
+  }
+  
+  .frame-57 {
+    width: 90%;
+    padding: 15px;
+  }
+  
+  .welcome-back {
+    font-size: 18px;
+  }
+  
+  .enter-your-credentials-to-access-your-account {
+    font-size: 12px;
+  }
+  
+  .frame-55, .frame-551, .frame-52, .frame-521 {
+    margin-bottom: 8px;
+  }
+  
+  .name, .name-2 {
+    font-size: 10px;
+  }
+  
+  .name-1, .name-3 {
+    font-size: 10px;
+  }
+  
+  .forgot-password, .remember-for-30-days {
+    font-size: 10px;
+  }
+  
+  .frame-56 {
+    padding: 6px 0;
+  }
+  
+  .frame-63 {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .sign-in-with-google, .sign-in-with-apple {
+    font-size: 10px;
+  }
+  
+  .group-4 .dont-have-an-account-sign-up {
+    font-size: 10px;
+  }
+  
+  .group-4 .dont-have-an-account-sign-up-sub-61 {
+    font-size: 10px;
+  }
+}

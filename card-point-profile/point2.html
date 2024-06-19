@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewards</title>
+    <link rel="stylesheet" href="point2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <img src="images/coffee.png" alt="Americano">
+            <div class="details">
+                <h2>Americano</h2>
+                <p>Valid until 04.07.24</p>
+            </div>
+            <button class="points" onclick="showConfirmation()">1340 points</button>
+        </div>
+        <div class="item">
+            <img src="images/croissant.png" alt="Yule Log cake">
+            <div class="details">
+                <h2>Yule Log cake</h2>
+                <p>Valid until 04.07.24</p>
+            </div>
+            <button class="points" onclick="showConfirmation()">1340 points</button>
+        </div>
+        <div class="item">
+            <img src="images/cappuccino.png" alt="Capuccino">
+            <div class="details">
+                <h2>Capuccino</h2>
+                <p>Valid until 04.07.24</p>
+            </div>
+            <button class="points" onclick="showConfirmation()">1340 points</button>
+        </div>
+    </div>
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeConfirmation()">&times;</span>
+            <p>Are you sure?</p>
+            <button class="confirm-button" onclick="confirmAction()">Yes</button>
+            <button class="cancel-button" onclick="closeConfirmation()">No</button>
+        </div>
+    </div>
+    <button class="my-point" onclick="goToPoint()">My Point</button>
+    <script>
+        function showConfirmation() {
+            document.getElementById('confirmationModal').style.display = 'block';
+        }
+    function closeConfirmation() {
+        document.getElementById('confirmationModal').style.display = 'none';
+    }
+
+    function confirmAction() {
+        window.location.href = 'point2.html';
+    }
+
+    function goToPoint() {
+        window.location.href = 'point.html';
+    }
+</script>
+</body>
+</html>

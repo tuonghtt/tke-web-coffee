@@ -1,0 +1,303 @@
+/* Đặt lại margin và padding để tránh các vấn đề mặc định của trình duyệt */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-page {
+  background: #FFFFFF;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #351C0F;
+  padding: 10px 20px;
+  height: auto; /* Điều chỉnh chiều cao tự động để phù hợp với nội dung */
+}
+
+.coffee-shop {
+  position: relative;
+  margin-right: auto;
+  font-family: 'La Belle Aurore';
+  font-weight: 400;
+  font-size: 40px;
+  color: #FFFFFF;
+  white-space: nowrap;
+}
+
+.home-products-cart-my-orders-profile-points-login-sign-up {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.link1 {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: 'ABeeZee', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.link1:hover {
+  color: grey;
+}
+
+.card-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-cart-header {
+  font-family: 'La Belle Aurore', sans-serif;
+  font-size: 30px;
+  color: #351C0F;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+
+.card-cart-table th,
+.card-cart-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.card-cart-table img {
+  width: 100px;
+  height: auto;
+}
+
+.card-quantity-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-quantity-control button {
+  background-color: #ddd;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.card-quantity-control input {
+  width: 40px;
+  text-align: center;
+  border: 1px solid #ddd;
+  margin: 0 5px;
+}
+
+.card-total {
+  text-align: right;
+  font-size: 20px;
+  color: #351C0F;
+  margin-bottom: 20px;
+}
+
+.card-back-button {
+  background-color: #351C0F;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.card-back-button:hover {
+  background-color: #4e2c1b;
+}
+
+.card-payment-methods {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card-payment-methods img {
+  width: 150px;
+  margin: 10px;
+}
+
+.footer {
+  width: 100%;
+  padding: 0 39px 47.3px 39px;
+  box-sizing: border-box;
+  background-color: #351C0F;
+}
+
+.container-5 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.container-1 {
+  margin: 0 22px 29.6px 22px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+.coffee-shop-1 {
+  position: relative;
+  margin-right: 24.7px;
+  overflow-wrap: break-word;
+  font-family: 'La Belle Aurore';
+  font-weight: 400;
+  font-size: 48px;
+  color: #FFFFFF;
+}
+
+.one-stop-one-heart-one-cup {
+  margin: 35.5px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'ABeeZee';
+  font-weight: 400;
+  font-size: 15px;
+  color: #FFFFFF;
+}
+
+.cng-ty-cphn-thng-mi-dch-vcoffee-shop-msdn-1234567-do-skhoch-vu-ttp-hn-cp-ngy-18052024-ngii-din-nguyn-vn-ba-ch-hniin-thoi-02871078079-email-coffeeshopgmail-com {
+  overflow-wrap: break-word;
+  font-family: 'ABeeZee';
+  font-weight: 400;
+  font-size: 25px;
+  color: #FFFFFF;
+}
+
+.all-rights-reserved {
+  font-family: 'ABeeZee';
+  font-weight: 400;
+  font-size: 15px;
+  color: #FFFFFF;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .home-products-cart-my-orders-profile-points-login-sign-up {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-container {
+    padding: 15px;
+  }
+
+  .card-cart-header {
+    font-size: 24px;
+  }
+
+  .card-cart-table img {
+    width: 80px;
+  }
+
+  .card-quantity-control button,
+  .card-quantity-control input {
+    padding: 5px;
+  }
+
+  .card-total {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px;
+  }
+
+  .coffee-shop {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .home-products-cart-my-orders-profile-points-login-sign-up {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card-cart-table img {
+    width: 60px;
+  }
+
+  .card-cart-table th,
+  .card-cart-table td {
+    font-size: 12px;
+  }
+
+  .card-total {
+    font-size: 16px;
+  }
+
+  .card-payment-methods img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 5px;
+  }
+
+  .coffee-shop {
+    font-size: 24px;
+  }
+
+  .home-products-cart-my-orders-profile-points-login-sign-up {
+    gap: 5px;
+  }
+
+  .card-container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .card-cart-header {
+    font-size: 20px;
+  }
+
+  .card-cart-table img {
+    width: 50px;
+  }
+
+  .card-cart-table th,
+  .card-cart-table td {
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  .card-total {
+    font-size: 14px;
+  }
+
+  .card-payment-methods img {
+    width: 80px;
+  }
+}
